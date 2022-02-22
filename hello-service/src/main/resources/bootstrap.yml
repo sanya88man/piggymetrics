@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: hello-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+      password: ${CONFIG_SERVICE_PASSWORD}
+      username: user
+springdoc:
+  swagger-ui:
+    path: /api-docs

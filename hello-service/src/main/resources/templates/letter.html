@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="card" style="width: 18rem; border-color: pink">
+    <img src="cid:olechka.png" class="card-img-top" alt="olya">
+    <div class="card-body">
+        <h5 class="card-title" style="text-align: center" th:text="${email}">Заголовок карточки</h5>
+        <p class="card-text" style="text-align: justify">Несколько быстрых примеров текста для построения на основ
+            е заголовка карточек и составляющих основную часть содержимого карточки.</p>
+        <a href="https://github.com/sanya88man" class="btn btn-success"
+           th:text="${cash}">Идти куда-нибудь</a>
+    </div>
+</div>
+
+</body>
+
+</html>
